@@ -64,7 +64,13 @@ plot(m2)
 
 To dig deeper, I created a 3d scatter plot of the three variables.
 
+<<<<<<< HEAD
 ```{r}
+=======
+```{r eval=FALSE}
+# not evaluated here because the output is too large to run on github
+
+>>>>>>> cb1d20fe6d79b9d60abc63e92d60ea15222c4697
 library(plotly)
 plot_ly(data[-201,], x = ~A, y = ~B, z = ~C, marker=list(color='blue', size=2)) %>%
   add_markers()
