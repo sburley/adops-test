@@ -66,7 +66,6 @@ To dig deeper, I created a 3d scatter plot of the three variables.
 
 ```{r}
 library(plotly)
-
 plot_ly(data[-201,], x = ~A, y = ~B, z = ~C, marker=list(color='blue', size=2)) %>%
   add_markers()
 ```
