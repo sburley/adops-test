@@ -1,6 +1,6 @@
 library(tidyverse)
 
-data <- read_csv('./adops_data.csv')
+data <- read_csv('./adops_data_analytics.csv')
 
 # Consider only the rows with country_id = "BDV" (there are 844 such rows). For
 # each site_id, we can compute the number of unique user_id's found in these 844
