@@ -10,18 +10,15 @@ data <- readr::read_csv('./adops_data_regression.csv',
                         col_names = c("A", "B", "C"))
 
 # 3d plot of datapoints
-
 library(plotly)
 plot_ly(data[-201,], x = ~A, y = ~B, z = ~C, marker=list(color='blue', size=2)) %>%
   add_markers()
 
 # Model and summary
-
 m <- lm(C ~ I(A^2*B) + A + B, data = data[-201,])
 summary(m)
 
 # Diagnostic plots of residuals
-
 par(mfrow = c(2,2))
 plot(m)
 
